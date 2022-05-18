@@ -22,5 +22,8 @@ while (true)
             Last.LastName(Lastname);
             Console.WriteLine("******************************************************************");
             break;
+        default:
+            Console.WriteLine("Worng Input");
+            break;
     }
 }
