@@ -61,7 +61,7 @@ while (true)
             Console.WriteLine("Enter Password");
             string Passwordrule3 = Console.ReadLine();
             Console.WriteLine();
-            PasswordRule3.Rule2(Passwordrule3);
+            PasswordRule3.Rule3(Passwordrule3);
             Console.WriteLine("******************************************************************");
             break;
         default:
