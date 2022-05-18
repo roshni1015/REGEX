@@ -2,7 +2,7 @@
 using REGEX;
 
 Console.WriteLine("Welcome to User Registration!");
-UserRegistration userRegistration = new UserRegistration();
+UserRegistration User = new UserRegistration();
 Console.WriteLine("Enter First Name");
 string Firstname = Console.ReadLine();
 userRegistration.FirstName(Firstname);
