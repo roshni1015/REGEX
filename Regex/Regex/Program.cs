@@ -65,7 +65,7 @@ while (true)
             Console.WriteLine("******************************************************************");
             break;
         default:
-            Console.WriteLine("Worng Input.");
+            Console.WriteLine("Wrong Input.");
             break;
     }
 }
