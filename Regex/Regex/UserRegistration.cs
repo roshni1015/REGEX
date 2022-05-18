@@ -115,7 +115,7 @@ namespace REGEX
             else
             {
                 status = false;
-                Console.WriteLine("Please Enter valid Password");
+                Console.WriteLine("Incorrect Password");
                 Console.WriteLine();
 
             }
