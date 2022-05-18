@@ -4,7 +4,7 @@ using REGEX;
 Console.WriteLine("Welcome to User Registration!");
 while (true)
 {
-    Console.WriteLine("Please choose the option :\n1) FirstName Validation\n2) LastName Validation \n3) Email Validation \n4) MobileNumber Validation \n5) Password with 8 Character \n6) Password with at least 1 Upper Case \n7) Password with at least 1 Numeric Case");
+    Console.WriteLine("Please choose the option :\n1) FirstName Validation\n2) LastName Validation \n3) Email Validation \n4) MobileNumber Validation \n5) Password with 8 Character \n6) Password with at least 1 Upper Case \n7) Password with at least 1 Numeric Case \n8) Password with 1 Special Character");
     int option = Convert.ToInt16(Console.ReadLine());
     switch (option)
     {
@@ -61,7 +61,15 @@ while (true)
             Console.WriteLine("Enter Password");
             string Passwordrule3 = Console.ReadLine();
             Console.WriteLine();
-            PasswordRule3.Rule2(Passwordrule3);
+            PasswordRule3.Rule3(Passwordrule3);
+            Console.WriteLine("******************************************************************");
+            break;
+        case 8:
+            UserRegistration PasswordRule4 = new UserRegistration();
+            Console.WriteLine("Enter Password");
+            string Passwordrule4 = Console.ReadLine();
+            Console.WriteLine();
+            PasswordRule4.Rule4(Passwordrule4);
             Console.WriteLine("******************************************************************");
             break;
         default:
