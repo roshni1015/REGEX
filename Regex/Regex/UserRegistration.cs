@@ -77,6 +77,28 @@ namespace REGEX
             }
             return status;
         }
+        public bool MobileNumber(string Mobilenumber)
+        {
+            bool status;
+            var Number = "^[0-9]{2}\\s[0-9]{10}$";
+            Regex regex = new Regex(Number);
+
+            if (regex.IsMatch(Mobilenumber))
+            {
+                status = true;
+                Console.Write("Given Mobile Number is Valid");
+                Console.WriteLine();
+
+            }
+            else
+            {
+                status = false;
+                Console.Write("Please Enter Mobile Number in Correct Way");
+                Console.WriteLine();
+
+            }
+            return status;
+        }
 
 
     }

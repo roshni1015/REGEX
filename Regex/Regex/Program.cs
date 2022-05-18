@@ -4,7 +4,7 @@ using REGEX;
 Console.WriteLine("Welcome to User Registration!");
 while (true)
 {
-    Console.WriteLine("Please choose the option :\n1) FirstName Validation\n2) LastName Validation \n3) Email Validation");
+    Console.WriteLine("Please choose the option :\n1) FirstName Validation\n2) LastName Validation \n3) Email Validation \n4) MobileNumber Validation");
     int option = Convert.ToInt16(Console.ReadLine());
     switch (option)
     {
@@ -30,6 +30,14 @@ while (true)
             string EmailId = Console.ReadLine();
             Console.WriteLine();
             emailID.Email(EmailId);
+            Console.WriteLine("******************************************************************");
+            break;
+        case 4:
+            UserRegistration Mobile = new UserRegistration();
+            Console.WriteLine("Enter EmailId");
+            string Number = Console.ReadLine();
+            Console.WriteLine();
+            Mobile.MobileNumber(Number);
             Console.WriteLine("******************************************************************");
             break;
         default:
