@@ -42,7 +42,7 @@ namespace REGEX
             else
             {
                 status = false;
-                Console.WriteLine("Please Enter Last Letter Capital");
+                Console.WriteLine("Please Enter First Letter Capital");
             }
             return status;
 
