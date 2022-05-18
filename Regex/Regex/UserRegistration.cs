@@ -28,6 +28,26 @@ namespace REGEX
             return status;
 
         }
+        public bool LastName(string Lastname)
+        {
+            bool status;
+            string lastname = "^[A-Z]{1}[a-z]{2,}$";
+            Regex regex = new Regex(lastname);
+
+            if (regex.IsMatch(Lastname))
+            {
+                status = true;
+                Console.WriteLine("First Name is Valid ");
+            }
+            else
+            {
+                status = false;
+                Console.WriteLine("Please Enter First Letter Capital");
+            }
+            return status;
+
+        }
+
 
     }
 }
