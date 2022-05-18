@@ -37,12 +37,12 @@ namespace REGEX
             if (regex.IsMatch(Lastname))
             {
                 status = true;
-                Console.WriteLine("First Name is Valid ");
+                Console.WriteLine("Last Name is Valid ");
             }
             else
             {
                 status = false;
-                Console.WriteLine("Please Enter First Letter Capital");
+                Console.WriteLine("Please Enter Last Letter Capital");
             }
             return status;
 
