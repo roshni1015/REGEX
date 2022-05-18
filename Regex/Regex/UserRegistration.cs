@@ -143,6 +143,29 @@ namespace REGEX
             }
             return status;
         }
+        public bool Rule3(string Password)
+        {
+            bool status;
+            var Passwordrule3 = "^(?=.*[0-9A-Z])[0-9a-zA-Z]{8,}$";
+            Regex regex = new Regex(Passwordrule3);
+
+            if (regex.IsMatch(Password))
+            {
+                status = true;
+                Console.WriteLine("Password is Valid");
+                Console.WriteLine();
+
+            }
+            else
+            {
+                status = false;
+                Console.WriteLine("Incorrect Password");
+                Console.WriteLine();
+
+            }
+            return status;
+        }
+
 
 
 
