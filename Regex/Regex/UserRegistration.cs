@@ -86,14 +86,14 @@ namespace REGEX
             if (regex.IsMatch(Mobilenumber))
             {
                 status = true;
-                Console.Write("Given Mobile Number is Valid");
+                Console.WriteLine("Given Mobile Number is Valid");
                 Console.WriteLine();
 
             }
             else
             {
                 status = false;
-                Console.Write("Please Enter Mobile Number in Correct Way");
+                Console.WriteLine("Please Enter Mobile Number in Correct Way");
                 Console.WriteLine();
 
             }
