@@ -115,7 +115,29 @@ namespace REGEX
             else
             {
                 status = false;
-                Console.WriteLine("Please Enter valid Password");
+                Console.WriteLine("Incorrect Password");
+                Console.WriteLine();
+
+            }
+            return status;
+        }
+        public bool Rule2(string Password)
+        {
+            bool status;
+            var Passwordrule2 = "^(?=.*[A-Z])[0-9a-zA-Z]{8,}$";
+            Regex regex = new Regex(Passwordrule2);
+
+            if (regex.IsMatch(Password))
+            {
+                status = true;
+                Console.WriteLine("Password is Valid");
+                Console.WriteLine();
+
+            }
+            else
+            {
+                status = false;
+                Console.WriteLine("Incorrect Password");
                 Console.WriteLine();
 
             }
