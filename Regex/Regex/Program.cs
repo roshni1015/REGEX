@@ -34,7 +34,7 @@ while (true)
             break;
         case 4:
             UserRegistration Mobile = new UserRegistration();
-            Console.WriteLine("Enter EmailId");
+            Console.WriteLine("Enter Mobile Number");
             string Number = Console.ReadLine();
             Console.WriteLine();
             Mobile.MobileNumber(Number);
