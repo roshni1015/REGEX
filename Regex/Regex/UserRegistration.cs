@@ -86,19 +86,42 @@ namespace REGEX
             if (regex.IsMatch(Mobilenumber))
             {
                 status = true;
-                Console.Write("Given Mobile Number is Valid");
+                Console.WriteLine("Given Mobile Number is Valid");
                 Console.WriteLine();
 
             }
             else
             {
                 status = false;
-                Console.Write("Please Enter Mobile Number in Correct Way");
+                Console.WriteLine("Please Enter Mobile Number in Correct Way");
                 Console.WriteLine();
 
             }
             return status;
         }
+        public bool Rule1(string Password)
+        {
+            bool status;
+            var Passwordrule1 = "^[0-9a-zA-Z]{8,}$";
+            Regex regex = new Regex(Passwordrule1);
+
+            if (regex.IsMatch(Password))
+            {
+                status = true;
+                Console.WriteLine("Password is Valid");
+                Console.WriteLine();
+
+            }
+            else
+            {
+                status = false;
+                Console.WriteLine("Please Enter valid Password");
+                Console.WriteLine();
+
+            }
+            return status;
+        }
+
 
 
     }
