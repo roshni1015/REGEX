@@ -19,11 +19,15 @@ namespace REGEX
             {
                 status = true;
                 Console.WriteLine("First Name is Valid ");
+                Console.WriteLine();
+
             }
             else
             {
                 status = false;
                 Console.WriteLine("Please Enter First Letter Capital");
+                Console.WriteLine();
+
             }
             return status;
 
@@ -38,11 +42,15 @@ namespace REGEX
             {
                 status = true;
                 Console.WriteLine("Last Name is Valid ");
+                Console.WriteLine();
+
             }
             else
             {
                 status = false;
                 Console.WriteLine("Please Enter First Letter Capital");
+                Console.WriteLine();
+ 
             }
             return status;
 
