@@ -19,11 +19,15 @@ namespace REGEX
             {
                 status = true;
                 Console.WriteLine("First Name is Valid ");
+                Console.WriteLine();
+
             }
             else
             {
                 status = false;
                 Console.WriteLine("Please Enter First Letter Capital");
+                Console.WriteLine();
+
             }
             return status;
 
@@ -37,15 +41,41 @@ namespace REGEX
             if (regex.IsMatch(Lastname))
             {
                 status = true;
-                Console.WriteLine("First Name is Valid ");
+                Console.WriteLine("Last Name is Valid ");
+                Console.WriteLine();
+
             }
             else
             {
                 status = false;
                 Console.WriteLine("Please Enter First Letter Capital");
+                Console.WriteLine();
+
             }
             return status;
 
+        }
+        public bool Email(string email)
+        {
+            bool status;
+            string EmailId = "^[A-Za-z](.[a-z])+@[A-Za-z]+.[a-z]{2,4}(.[a-z]{2,3})?$";
+            Regex regex = new Regex(EmailId);
+        
+            if (regex.IsMatch(email))
+            {
+                status = true;
+                Console.WriteLine("Given EmailId is Valid");
+                Console.WriteLine();
+
+            }
+            else
+            {
+                status = false;
+                Console.WriteLine("Please Enter EmailId in Correct Way");
+                Console.WriteLine();
+
+            }
+            return status;
         }
 
 
